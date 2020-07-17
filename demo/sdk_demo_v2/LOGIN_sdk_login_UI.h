@@ -136,8 +136,9 @@ public:
 
 private:
 	CVerticalLayoutUI* m_WithoutLoginRestAPIPage;
-	CRichEditUI*	   m_editRestAPIUserZAK;
-	CRichEditUI*	   m_editMeetingNumber;
+	CRichEditUI*	   m_editRestAPIKey;
+	CRichEditUI*	   m_editRestAPISecret;
+	CRichEditUI*	   m_editEmail;
 	CRichEditUI*	   m_editScreenName;
 
 	CCheckBoxUI*  m_chkRemember;
@@ -183,7 +184,6 @@ public:
 	void ChangeUIforJoinFailed();
 
 	void NotifyAuthDone();
-    void EnableEmailLoginUI(bool);
 
 protected:
 	CPaintManagerUI m_PaintManager;
