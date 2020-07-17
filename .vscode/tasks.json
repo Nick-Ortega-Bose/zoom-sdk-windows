@@ -10,20 +10,16 @@
             "command": "del bin\\sdk_demo_v2* bin\\*.obj bin\\vc*.pdb"
         },
         {
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "label": "demo2015",
+            "group": 
+                {   "kind": "build",
+                    "isDefault": true
+                },
+            "label": "demo",
             "type": "shell",
-            "command": "msbuild /P:Configuration=Release demo\\sdk_demo_v2\\sdk_demo_v2_2015.sln",
-            "problemMatcher": []
-        },
-        {
-            "group": "build",
-            "label": "demo2017",
-            "type": "shell",
-            "command": "msbuild /P:Configuration=Release /P:Platform=x86 demo\\sdk_demo_v2\\sdk_demo_v2_2017.sln"
+            "command": "msbuild /P:Configuration=Release /P:Platform=x86 demo\\sdk_demo_v2\\sdk_demo_v2.vcxproj",
+            "problemMatcher": [
+                "$msCompile"
+            ]
         }
     ]
 }

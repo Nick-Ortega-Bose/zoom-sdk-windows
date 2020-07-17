@@ -3540,8 +3540,8 @@ CSDKSettingsUIMgr::~CSDKSettingsUIMgr()
 void CSDKSettingsUIMgr::InitWindow()
 {
 #ifdef _ONE_CLICK_TEST_
-    //click 'Configure' button to test almost all the APIs. The test result file Auto_TestAllFunction_Log.txt locates d:\
-    CSDKSettingApiTest *testapi =new CSDKSettingApiTest();
+    // click 'Configure' button to test almost all the APIs. The test result file Auto_TestAllFunction_Log.txt locates
+    // d:CSDKSettingApiTest *testapi =new CSDKSettingApiTest();
 	delete testapi;
 #endif
 
