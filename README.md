@@ -4,6 +4,9 @@
 </div>
 
 
+## Added notes for setting up this repository
+See [NOREADME.md](./NOREADME.md)
+
 ## Table of Contents
 - [:rotating_light: Announcement :rotating_light:](#rotating_light-announcement-rotating_light)   
 - [Latest SDK Notifications](#latest-sdk-notifications)   
