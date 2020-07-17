@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "group": "none",
+            "label": "clean",
+            "type": "shell",
+            "command": "del bin\\sdk_demo_v2* bin\\*.obj bin\\vc*.pdb"
+        },
+        {
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "label": "demo2015",
+            "type": "shell",
+            "command": "msbuild /P:Configuration=Release demo\\sdk_demo_v2\\sdk_demo_v2_2015.sln",
+            "problemMatcher": []
+        },
+        {
+            "group": "build",
+            "label": "demo2017",
+            "type": "shell",
+            "command": "msbuild /P:Configuration=Release /P:Platform=x86 demo\\sdk_demo_v2\\sdk_demo_v2_2017.sln"
+        }
+    ]
+}
