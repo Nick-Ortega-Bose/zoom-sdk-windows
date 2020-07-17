@@ -1,0 +1,3 @@
+bin/sdk_demo*
+bin/*.obj
+bin/*.pdb
