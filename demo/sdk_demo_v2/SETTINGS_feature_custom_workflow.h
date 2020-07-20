@@ -11,6 +11,7 @@ public:
 	void CleanUp(){}
 	void SetMeetingUIPos(ZOOM_SDK_NAMESPACE::WndPosition pos);
 	void SetFloatVideoPos(ZOOM_SDK_NAMESPACE::WndPosition pos);
+	void SetMeetingIDForMeetingUITitle(UINT64 meetingNumber);
 	void EnableLButtonDBClick4SwitchFullScreenMode(bool bEnable);
 	void EnableShareIOSDevice(bool bEnable);
 	void EnableShareWhiteBoard(bool bEnable);

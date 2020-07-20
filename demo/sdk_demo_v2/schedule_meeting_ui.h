@@ -21,7 +21,6 @@ enum ErrorMessageType
 	CanNotSetPwd,
 	ApiUnknowErr,
 	LeaveEditMeeting,
-	InterpreterEmailIsEmpty,
 
 };
 enum PreMeetingPageType
