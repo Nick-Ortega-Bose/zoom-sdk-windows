@@ -7,16 +7,26 @@
             "group": "none",
             "label": "clean",
             "type": "shell",
-            "command": "del bin\\sdk_demo_v2* bin\\*.obj bin\\vc*.pdb"
+            "command": "del bin\\sdk_demo_v2* bin\\*.obj bin\\vc*.pdb",
+            "problemMatcher": []
         },
         {
-            "group": 
-                {   "kind": "build",
-                    "isDefault": true
-                },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "label": "demo",
             "type": "shell",
             "command": "msbuild /P:Configuration=Release /P:Platform=x86 demo\\sdk_demo_v2\\sdk_demo_v2.vcxproj",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "group": "build",
+            "label": "audio",
+            "type": "shell",
+            "command": "msbuild /P:Configuration=Release /P:Platform=x86 first_audio_interrupt\\audio_interrupt\\audio_interrupt.vcxproj",
             "problemMatcher": [
                 "$msCompile"
             ]
